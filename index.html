@@ -12,70 +12,125 @@
    
 
     <style>
+        .card-title{
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .card{
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+        }
+        .card-img, .card-img-top {
+          border-top-left-radius: 20px;
+          border-top-right-radius: 20px;
+          
+        }
+        .phone-button-center{
+          background-color: #ff9c27;
+          font-weight: 700;
+          outline: none !important;
+        }
+        .phone-button-center:hover{
+          background-color: #ff9c27;
+          border-color: #ff9c27;
+        }
+        .btn-primary {
+            color: #fff;
+            /* background-color: #0d6efd; */
+            border-color: #ff9c27;
+          }
+
+        
+          .btn-check:focus+.btn-primary, .btn-primary:focus {
+            color: #fff;
+            background-color: #ff9c27;
+            border-color: #ff9c27;
+            box-shadow: 0 0 0 0.25rem #ff9c27;
+          }
         @media screen and (max-width:767px){
-            .up-card2{
-                margin-top: 2rem;
-            }
+
+          .card-2{
+            margin-left: 0;
+            margin-top: 2rem;
+            
+          }
+          .card-phone-middle{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .card-title{
+            text-align: center;
+          }
+         
+          .phone-button-center{
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+          }
         }
 
         @media screen and (min-width:768px) and (max-width:991px){
-            .up-card3{
-                height: 154px;
-                margin-bottom: 1.5rem;
-            }
-            .tab-btn{
-                margin-top: 25px;
-            }
+          .card-2{
+            margin-left: 0;
+          }
+          .card-title{
+            text-align: center;
+          }
+          .phone-button-center{
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+          }
+          .card-tab{
+            margin-top: 2rem;
+          }
         }
     </style>
   </head>
   <body>
     <h2 class="text-center mb-4">Upcoming Courses</h2>
+    
     <div class="container">
-
-        <div class="row mb-4">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                <div class="card pb-4" style="height: 154px;">
-                    <img src="..." class="card-img-top" alt="...">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 card-phone-middle">
+                <div class="card" style="width: 17rem;">
+                    <img src="./images/1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Kid's Programming</h5>
-                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      <a href="#" class="btn btn-primary mt-4 ">Details</a>
+                      <h5 class="card-title">ডিজিটাল মার্কেটিং</h5>
+                      <a href="#" class="btn btn-primary mt-3 phone-button-center">বিস্তারিত</a></button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                <div class="card up-card2 up-card3">
-                    <img src="..." class="card-img-top" alt="...">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 card-2 card-phone-middle">
+                <div class="card" style="width: 17rem;">
+                    <img src="./images/2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Web Design & Development</h5>
-                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      <a href="#" class="btn btn-primary tab-btn">Details</a>
+                      <h5 class="card-title">গ্রাফিক্স ডিজাইন</h5>
+                      <a href="#" class="btn btn-primary mt-3  phone-button-center">বিস্তারিত</a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                <div class="card up-card2">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title ">Graphic Design</h5>
-                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      <a href="#" class="btn btn-primary mt-4">Details</a>
-                    </div>
-                </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 card-2 card-phone-middle card-tab">
+              <div class="card" style="width: 17rem;">
+                  <img src="./images/3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">কিড'স প্রোগ্রামিং</h5>
+                    <a href="#" class="btn btn-primary mt-3  phone-button-center">বিস্তারিত</a>
+                  </div>
+              </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-3">
-                <div class="card up-card2">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Digital Marketing</h5>
-                      <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                      <a href="#" class="btn btn-primary mt-4">Details</a>
-                    </div>
-                </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 card-2 card-phone-middle mb-4 card-tab">
+              <div class="card" style="width: 17rem;">
+                  <img src="./images/web.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ওয়েব ডিজাইন এবং ডেভেলপমেন্ট</h5>
+                    <a href="#" class="btn btn-primary mt-3  phone-button-center">বিস্তারিত</a>
+                  </div>
+              </div>
             </div>
         </div>
     </div>
